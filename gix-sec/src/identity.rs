@@ -26,6 +26,7 @@ mod impl_ {
 }
 
 #[cfg(all(not(windows), not(target_os = "wasi")))]
+#[cfg(target_arch = "wasm32")]
 mod impl_ {
     use std::path::Path;
 
